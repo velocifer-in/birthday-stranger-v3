@@ -23,10 +23,10 @@ jobs:
       - name: Install Dioxus CLI
         run: cargo install dioxus-cli
 
-      - name: Build Project 🎁
+      - name: Build Project ⚙️
         run: |
-          dx build --release
-          cp dist dist
+          dx bundle --release
+          cp dist\public dist
 
       - name: Deploy Project 🚀
         uses: JamesIves/github-pages-deploy-action@v4.6.3
