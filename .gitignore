@@ -157,7 +157,6 @@ lib/generated_plugin_registrant.dart
 *.fnt
 *.fon
 *.otf
-*.ttf
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
