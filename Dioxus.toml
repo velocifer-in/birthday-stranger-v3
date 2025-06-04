@@ -14,9 +14,10 @@ icon = ["/assets/banner.png"]
 
 [web.app]
 
-base_path = "/"
 # HTML title tag content
 title = "Happy birthday"
+index_on_404 = true
+base_path = "birthday-stranger-v3"
 
 [web.watcher]
 
@@ -30,7 +31,7 @@ watch_path = ["src", "assets"]
 [web.resource]
 
 # Additional CSS style files
-style = []
+style = ["/assets/styling"]
 
 # Additional JavaScript files
 script = []
