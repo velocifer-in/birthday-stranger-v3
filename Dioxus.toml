@@ -14,7 +14,7 @@ icon = ["/assets/banner.png"]
 
 [web.app]
 
-base_path = "wish.phineas.work"
+base_path = "/"
 # HTML title tag content
 title = "Happy birthday"
 
