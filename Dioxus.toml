@@ -14,7 +14,7 @@ icon = ["/assets/banner.png"]
 
 [web.app]
 
-base_path = "birthday-stranger-v3"
+base_path = ""
 # HTML title tag content
 title = "Happy birthday"
 
