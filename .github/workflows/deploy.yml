@@ -26,7 +26,7 @@ jobs:
       - name: Build Project ⚙️
         run: |
           dx bundle --release
-          cp dist/public dist
+          cp -r dist/public dist
 
       - name: Deploy Project 🚀
         uses: JamesIves/github-pages-deploy-action@v4.6.3
