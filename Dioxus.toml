@@ -9,8 +9,12 @@ out_dir = "dist"
 # resource (assets) file folder
 asset_dir = "assets"
 
+[bundle]
+icon = ["/assets/banner.png"]
+
 [web.app]
 
+base_path = "birthday-stranger-v3/public"
 # HTML title tag content
 title = "Happy birthday"
 
@@ -21,7 +25,6 @@ reload_html = true
 
 # which files or dirs will be watcher monitoring
 watch_path = ["src", "assets"]
-
 
 # include `assets` in web platform
 [web.resource]
