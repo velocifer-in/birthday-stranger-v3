@@ -1635,4 +1635,4 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/android,androidstudio,cmake,dart,flutter,font,git,go,intellij,intellij+all,intellij+iml,jetbrains,jetbrains+all,jetbrains+iml,node,react,reactnative,rust,rust-analyzer,visualstudio,visualstudiocode,vs
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
-
+/dist/**
