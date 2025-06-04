@@ -1,0 +1,569 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #0f1116;
+    background-image: radial-gradient(circle at top left, #2c2f36, #0f1116);
+    color: #ffffff;
+    font-family: 'Komigo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    text-shadow: 2px 2px #000000;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #e6b800;
+}
+
+#hero {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    text-align: center;
+}
+
+#links {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#links a {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    margin: 10px 0px;
+    border: white 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+#links a:hover {
+    background-color: #1f1f1f;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+#header {
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.personal-greeting {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: #fff;
+    background: #ff69b4;
+    padding: 10px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1002;
+    animation: bounce 1s infinite alternate;
+}
+
+.quote-card {
+    position: fixed;
+    top: 30%;
+    left: 5%;
+    width: 250px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+    font-style: italic;
+    color: #333;
+}
+
+@keyframes floatGift {
+    0% {
+        top: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 200vh;
+        opacity: 0;
+    }
+}
+
+body {
+    margin: 0;
+    background: #2c3e50;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.fancy-cake {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    z-index: 5;
+}
+
+.plate {
+    width: 220px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 10px;
+    margin: 0 auto 5px;
+}
+
+.cake-layer {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.bottom-layer {
+    background: #ffadad;
+}
+
+.middle-layer {
+    background: #ffd6a5;
+    margin-top: -10px;
+}
+
+.top-layer {
+    background: #caffbf;
+    margin-top: -10px;
+}
+
+.icing {
+    height: 15px;
+    background: white;
+    border-radius: 10px 10px 0 0;
+    margin-top: -5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.drip {
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 20px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    animation: dripWave 2s ease-in-out infinite;
+}
+
+@keyframes dripWave {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1.3);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.candles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -20px;
+}
+
+.candle {
+    width: 8px;
+    height: 30px;
+    background: #fff;
+    border-radius: 2px;
+    position: relative;
+}
+
+.flame {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 10px;
+    background: gold;
+    border-radius: 50%;
+    animation: flicker 0.2s infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) scale(1.2);
+        opacity: 0.7;
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 18px;
+    user-select: none;
+    pointer-events: none;
+    animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.balloon-pop {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: sparkle 1s ease-out forwards;
+}
+
+.balloon {
+    position: absolute;
+    bottom: -50px;
+    border-radius: 50%;
+    opacity: 0.9;
+    z-index: 999;
+    animation: floatUp 8s linear forwards, drift 3s ease-in-out infinite;
+}
+
+.balloon::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 80px;
+    background: white;
+    animation: waveThread 1s ease-in-out infinite alternate;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}
+
+@keyframes waveThread {
+    0% {
+        transform: translateX(-50%) rotate(-5deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(5deg);
+    }
+}
+
+.sparkle {
+    position: absolute;
+    font-size: 30px;
+    color: gold;
+    opacity: 0.8;
+    animation: sparkleAnimation 1s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes sparkleAnimation {
+    from {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-50px, -50px) scale(2);
+        opacity: 0;
+    }
+}
+
+.happy-banner {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1001;
+}
+
+.happy-banner .banner-text {
+    font-family: "Komigo", cursive, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    line-height: 1.2;
+    display: inline-block;
+    text-shadow: 1px 1px 2px black;
+    animation: bounce 1s infinite alternate;
+    margin: 0 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.happy-banner .string {
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background: #333;
+    top: -40px;
+}
+
+.happy-banner .string.left {
+    left: 20%;
+}
+
+.happy-banner .string.right {
+    right: 20%;
+}
+
+.firefly {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 10px 2px yellow;
+    animation: fadeBlink 3s infinite alternate ease-in-out,
+    moveRandomly 10s infinite linear;
+}
+
+@keyframes fadeBlink {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveRandomly {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-50px, 50px) rotate(360deg);
+    }
+}
+
+.firework {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation: launch 1s ease-out forwards, explode 2s 1s forwards;
+}
+
+.spark {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: sparkleEffect 2s linear forwards;
+}
+
+@keyframes launch {
+    to {
+        transform: translateY(-300vh);
+    }
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+@keyframes sparkleEffect {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.2) translate(var(--x), var(--y));
+    }
+}
+
+.confetti {
+    position: fixed;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.birthday-banner {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    z-index: 1002;
+    pointer-events: none;
+    animation: bannerWave 3s ease-in-out infinite;
+}
+
+@keyframes bannerWave {
+    0% {
+        transform: translateX(-50%) rotate(-2deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(2deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(-2deg);
+    }
+}
+
+.personal-name-banner {
+    position: fixed;
+    top: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 12px;
+    z-index: 1002;
+    animation: bannerWave 3s ease-in-out infinite;
+    text-shadow: none;
+    font-style: normal;
+    font-family: "Komigo", sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90vw;
+    text-align: center;
+    display: inline-block;
+}
+
+@media (max-width: 480px) {
+    .personal-greeting {
+        font-size: 1.2em;
+        padding: 6px 15px;
+    }
+
+    .quote-card {
+        width: 90%;
+        left: 5%;
+        font-size: 0.9em;
+    }
+
+    .happy-banner .banner-text {
+        font-size: 1.6em;
+        padding: 5px 10px;
+    }
+
+    .cake-layer {
+        height: 30px;
+    }
+
+    .candles {
+        gap: 5px;
+    }
+
+    .candle {
+        height: 20px;
+    }
+}
+
+.poem-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    /* Remove fixed height and allow flex to control height */
+    background: transparent;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px 30px;
+    border: 3px solid gold;
+    border-radius: 15px;
+    box-shadow: 0 0 15px gold;
+    z-index: 1001;
+    /* Remove white-space: pre-wrap; from container, move to inner poem div */
+    max-width: 90vw;
+    overflow: hidden;
+    max-height: 8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@font-face {
+    font-family: 'Komigo';
+    src: url('/assets/fonts/Komigo3D-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
